@@ -954,6 +954,30 @@ html {
     min-height: 120px;
 }
 
+/* Dokumentasi Styles */
+.dokumentasi-preview {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.dokumentasi-thumbnail {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background: #ffffff;
+    display: block;
+    margin: 0 auto;
+}
+
+.card:hover .dokumentasi-thumbnail {
+    transform: scale(1.05);
+}
+
 /* Responsive Design Updates */
 @media (max-width: 768px) {
     .profile-card {
