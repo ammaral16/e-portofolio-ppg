@@ -16,6 +16,13 @@ navLinks.forEach(link => {
     });
 });
 
+// Close menu when clicking outside
+document.addEventListener('click', function(e) {
+    if (!navMenu.contains(e.target) && !e.target.closest('.nav-menu')) {
+        navMenu.classList.remove('active');
+    }
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
