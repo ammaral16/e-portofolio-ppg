@@ -319,6 +319,11 @@ body {
     gap: 2rem;
 }
 
+/* Video Grid - 2x2 layout */
+.video-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* Card Styles */
 .card {
     background: white;
@@ -525,6 +530,10 @@ body {
     .grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
     }
     
     .card {
@@ -1010,8 +1019,6 @@ html {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     transform: translateY(-20px);
     transition: all 0.3s ease;
-<<<<<<< HEAD
-=======
 }
 
 .modal-header {
@@ -1044,97 +1051,6 @@ html {
     color: white;
 }
 
-/* ==========================================
-   ANALISIS ARTEFAK PEMBELAJARAN
-========================================== */
-
-#analisis-artefak {
-    padding: 100px 0;
-    background: #f8fafc;
-}
-
-#analisis-artefak .section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#analisis-artefak .section-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #1e293b;
-    margin-bottom: 15px;
-}
-
-#analisis-artefak .section-subtitle {
-    max-width: 850px;
-    margin: 0 auto;
-    color: #64748b;
-    line-height: 1.8;
-}
-
-.analysis-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 30px;
-}
-
-.analysis-card {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 35px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    border-top: 5px solid #0f172a;
-}
-
-.analysis-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
-}
-
-.analysis-number {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.analysis-card h3 {
-    color: #0f172a;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-.analysis-card p {
-    text-align: justify;
-    color: #475569;
-    line-height: 1.8;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-
-    #analisis-artefak .section-title {
-        font-size: 2.2rem;
-    }
-
-    .analysis-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .analysis-card {
-        padding: 25px;
-    }
->>>>>>> 8d02e052c2c64644831935c663e9d23288714a9e
-}
-
 .modal-header {
     display: flex;
     justify-content: space-between;
@@ -1163,94 +1079,4 @@ html {
 .modal-close:hover {
     background: #e2e8f0;
     color: white;
-}
-
-/* ==========================================
-   ANALISIS ARTEFAK PEMBELAJARAN
-========================================== */
-
-#analisis-artefak {
-    padding: 100px 0;
-    background: #f8fafc;
-}
-
-#analisis-artefak .section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#analisis-artefak .section-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #1e293b;
-    margin-bottom: 15px;
-}
-
-#analisis-artefak .section-subtitle {
-    max-width: 850px;
-    margin: 0 auto;
-    color: #64748b;
-    line-height: 1.8;
-}
-
-.analysis-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 30px;
-}
-
-.analysis-card {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 35px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    border-top: 5px solid #0f172a;
-}
-
-.analysis-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
-}
-
-.analysis-number {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.analysis-card h3 {
-    color: #0f172a;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-.analysis-card p {
-    text-align: justify;
-    color: #475569;
-    line-height: 1.8;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-
-    #analisis-artefak .section-title {
-        font-size: 2.2rem;
-    }
-
-    .analysis-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .analysis-card {
-        padding: 25px;
-    }
 }
